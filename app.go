@@ -23,6 +23,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		data := map[string]string{
 			"Region": os.Getenv("FLY_REGION"),
+			"Date":   time.Now().Format("2006-01-02 15:04:05"),
 		}
 
 		t.ExecuteTemplate(w, "index.html.tmpl", data)
