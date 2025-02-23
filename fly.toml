@@ -4,7 +4,7 @@
 #
 
 app = 'fly-old-tree-9236'
-primary_region = 'ord'
+primary_region = 'yul'
 
 [build]
   [build.args]
